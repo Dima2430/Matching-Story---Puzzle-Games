@@ -1,21 +1,53 @@
 @import './header.scss';
+
 @import './vite-promo.scss';
 @import './footer.scss';
 @import './terms.scss';
+@import './gallery.scss';
+@import './reviews.scss';
+
 :root {
   font-family: 'Lato', 'Roboto Slab', sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
 
-  color: #000000;
-  background: linear-gradient(180deg, #0e88cb 0%, #5ac7ef 40.05%);
+
+  color: rgba(0, 0, 0, 1);
+  background: rgba(255, 255, 255, 0.87);
+background: linear-gradient(180deg, #0e88cb 0%, #5ac7ef 40.05%);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: $_main_bg_color;
+  overflow: visible;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.32;
+  color: rgba(7, 17, 64, 1);
 }
