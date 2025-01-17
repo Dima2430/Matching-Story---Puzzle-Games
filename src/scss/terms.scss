@@ -1,0 +1,54 @@
+.terms {
+  position: relative;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 105px;
+  padding-bottom: 40px;
+}
+.home-link {
+  padding: 12px 8px;
+  background-color: #9adcff;
+  border-radius: 25px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  font-weight: 600;
+  width: 121px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 3px 3px 7px 0px #00000040;
+}
+h1,
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26.38px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+p {
+  font-size: 14px;
+  line-height: 16.8px;
+}
+li {
+  margin-bottom: 24px;
+}
+.terms-li {
+  margin-bottom: 7px;
+}
+.terms-list {
+  list-style: disc;
+  padding-left: 47px;
+}
+.terms-list li {
+  margin-bottom: 12px;
+}
+.terms-list a {
+  text-decoration: underline;
+}
