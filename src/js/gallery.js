@@ -23,5 +23,5 @@ const swiper = new Swiper('.swiper', {
 
 const swiperBullets = document.querySelectorAll('.swiper-pagination-bullet');
 swiperBullets.forEach(bullet => {
-  bullet.setAttribute('style', 'background:#ffffff');
+  bullet.setAttribute('style', 'background:#ffffff;');
 });
