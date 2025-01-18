@@ -1,10 +1,10 @@
 @import './header.scss';
 
-@import './vite-promo.scss';
 @import './footer.scss';
 @import './terms.scss';
 @import './gallery.scss';
 @import './reviews.scss';
+@import './why-us.scss';
 
 :root {
   font-family: 'Lato', 'Roboto Slab', sans-serif;
@@ -12,10 +12,9 @@
   line-height: 24px;
   font-weight: 400;
 
-
   color: rgba(0, 0, 0, 1);
   background: rgba(255, 255, 255, 0.87);
-background: linear-gradient(180deg, #0e88cb 0%, #5ac7ef 40.05%);
+  background: linear-gradient(180deg, #0e88cb 0%, #5ac7ef 40.05%);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
