@@ -1,21 +1,20 @@
 @import './header.scss';
-
-@import './vite-promo.scss';
+@import './hero.scss';
 @import './footer.scss';
 @import './terms.scss';
 @import './gallery.scss';
 @import './reviews.scss';
+@import './benefits.scss';
+@import './about.scss';
 
 :root {
   font-family: 'Lato', 'Roboto Slab', sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-
-
   color: rgba(0, 0, 0, 1);
   background: rgba(255, 255, 255, 0.87);
-background: linear-gradient(180deg, #0e88cb 0%, #5ac7ef 40.05%);
+  background: linear-gradient(180deg, #0e88cb 0%, #5ac7ef 40.05%);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -50,4 +49,13 @@ body {
   font-weight: 700;
   line-height: 1.32;
   color: rgba(7, 17, 64, 1);
+}
+main {
+  flex-grow: 1;
+  padding-top: 50px;
+}
+@media screen and (min-width: 1200px) {
+  main {
+    padding-top: 100px;
+  }
 }
