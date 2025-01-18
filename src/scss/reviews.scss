@@ -3,13 +3,20 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+  }
 }
 
 .reviews-item {
   text-align: center;
   width: 100%;
   position: relative;
-  z-index: 999;
+  z-index: 10;
+  margin-bottom: 0;
 }
 
 .item-1 {
@@ -18,6 +25,11 @@
   position: absolute;
   top: -20%;
   z-index: -1;
+
+  @media screen and (min-width: 1200px) {
+    width: 630px;
+    top: 0;
+  }
 }
 
 .reviews-item-1-wrapper {
@@ -27,7 +39,12 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  left: 55px;
+  left: 125px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 307px;
+    top: 40px;
+  }
 }
 
 .item-2 {
@@ -35,6 +52,12 @@
   position: absolute;
   top: -22%;
   z-index: -1;
+
+  @media screen and (min-width: 1200px) {
+    width: 602px;
+    top: -220px;
+    right: 0;
+  }
 }
 
 .reviews-item-2-wrapper {
@@ -45,6 +68,12 @@
   align-items: center;
   position: relative;
   left: 58px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 305px;
+    left: 734px;
+    top: -160px;
+  }
 }
 
 .item-3 {
@@ -52,6 +81,12 @@
   position: absolute;
   top: -22%;
   z-index: -1;
+
+  @media screen and (min-width: 1200px) {
+    width: 680px;
+    top: -250px;
+    left: 260px;
+  }
 }
 
 .reviews-item-3-wrapper {
@@ -62,6 +97,12 @@
   align-items: center;
   position: relative;
   left: 35px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 296px;
+    left: 425px;
+    top: -185px;
+  }
 }
 
 .item-4 {
@@ -69,6 +110,12 @@
   position: absolute;
   top: -22%;
   z-index: -1;
+
+  @media screen and (min-width: 1200px) {
+    width: 620px;
+    top: -240px;
+    left: 0;
+  }
 }
 
 .reviews-item-4-wrapper {
@@ -79,6 +126,14 @@
   align-items: center;
   position: relative;
   left: 49px;
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+
+    max-width: 289px;
+    left: 133px;
+    top: -180px;
+  }
 }
 
 .item-5 {
@@ -86,6 +141,12 @@
   position: absolute;
   top: -26%;
   z-index: -1;
+
+  @media screen and (min-width: 1200px) {
+    width: 620px;
+    top: -230px;
+    right: 14px;
+  }
 }
 
 .reviews-item-5-wrapper {
@@ -96,12 +157,25 @@
   position: relative;
   left: 20px;
   padding-bottom: 19px;
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+
+    max-width: 288px;
+    left: 743px;
+    top: -165px;
+  }
 }
 
 .reviews-item-img {
   width: 32px;
   height: 33px;
   margin-bottom: 4px;
+
+  @media screen and (min-width: 1200px) {
+    width: 68px;
+    height: 68px;
+  }
 }
 
 .reviews-nickname {
@@ -110,6 +184,10 @@
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 .reviews-text {
@@ -117,4 +195,8 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
