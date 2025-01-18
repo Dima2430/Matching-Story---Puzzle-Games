@@ -15,7 +15,7 @@
   text-align: center;
   width: 100%;
   position: relative;
-  z-index: 10;
+  z-index: 2;
   margin-bottom: 0;
 }
 
@@ -39,7 +39,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  left: 125px;
+  left: 55px;
 
   @media screen and (min-width: 1200px) {
     max-width: 307px;

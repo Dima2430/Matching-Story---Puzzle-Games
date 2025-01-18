@@ -7,7 +7,16 @@ import 'swiper/css/pagination';
 
 const swiper = new Swiper('.swiper', {
   modules: [Navigation, Pagination],
-  spaceBetween: 10,
+  slidesPerView: 1,
+  spaceBetween: 24,
+
+  breakpoints: {
+    1200: {
+      slidesPerView: 1,
+      spaceBetween: 116,
+      centeredSlides: true,
+    },
+  },
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
