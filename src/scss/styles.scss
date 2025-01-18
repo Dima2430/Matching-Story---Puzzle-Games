@@ -6,6 +6,8 @@
 @import './reviews.scss';
 @import './benefits.scss';
 @import './about.scss';
+@import './why-us.scss';
+@import './faq.scss';
 
 :root {
   font-family: 'Lato', 'Roboto Slab', sans-serif;
@@ -31,6 +33,17 @@ body {
   overflow: visible;
 }
 
+.section {
+  margin: 0 auto;
+  max-width: 320px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 100px;
+    max-width: 1200px;
+  }
+}
+
 .container {
   max-width: 320px;
   margin: 0 auto;
@@ -39,6 +52,8 @@ body {
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -49,6 +64,11 @@ body {
   font-weight: 700;
   line-height: 1.32;
   color: rgba(7, 17, 64, 1);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
 }
 main {
   flex-grow: 1;

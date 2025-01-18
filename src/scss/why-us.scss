@@ -1,0 +1,149 @@
+.cloud-position {
+  position: relative;
+}
+
+.on-cloud {
+  position: relative;
+}
+
+.why-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding-top: 16px;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    padding-top: 0;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 47px;
+  }
+}
+
+.first-cloud {
+  width: 180px;
+  height: 141px;
+  position: absolute;
+  left: 145px;
+  top: -50px;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.second-cloud {
+  width: 180px;
+  position: absolute;
+  left: -1px;
+  bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.third-cloud {
+  width: 350px;
+  position: absolute;
+  right: 0;
+  top: 75px;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.why-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 109px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 12px 8px;
+  background-color: #9adcff;
+  border-radius: 25px;
+  box-shadow: 3px 3px 7px 0px #00000040;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    height: 160px;
+    padding: 32px 9px;
+  }
+
+  .why-list-item-img {
+    position: absolute;
+    top: -16px;
+    left: 0;
+
+    @media screen and (min-width: 1200px) {
+      top: -30px;
+    }
+  }
+
+  .why-list-item-img.one {
+    width: 23px;
+    height: 47px;
+
+    @media screen and (min-width: 1200px) {
+      width: 39px;
+      height: 79px;
+    }
+  }
+
+  .why-list-item-img.two {
+    width: 28px;
+    height: 40px;
+
+    @media screen and (min-width: 1200px) {
+      width: 56px;
+      height: 79px;
+    }
+  }
+
+  .why-list-item-img.three {
+    width: 28px;
+    height: 39px;
+
+    @media screen and (min-width: 1200px) {
+      width: 54px;
+      height: 75px;
+    }
+  }
+
+  .why-list-item-img.four {
+    width: 31px;
+    height: 39px;
+
+    @media screen and (min-width: 1200px) {
+      width: 60px;
+      height: 75px;
+    }
+  }
+}
+
+.why-list-item-title {
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.why-list-item-text {
+  font-weight: 500;
+  line-height: 1.2;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
