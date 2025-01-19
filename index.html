@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Matching-Story---Puzzle-Games/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/Matching-Story---Puzzle-Games/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/Matching-Story---Puzzle-Games/assets/vendor-55f6e560.js">
+    <link rel="stylesheet" href="/Matching-Story---Puzzle-Games/assets/vendor-0ded8c46.css">
+    <link rel="stylesheet" href="/Matching-Story---Puzzle-Games/assets/styles-9a11cc3a.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="buttons">
+    <button class="logo-button">
+      <img
+        class="logo-icon"
+        width="40px"
+        height="40px"
+        src="/Matching-Story---Puzzle-Games/assets/logo-mobile-92d60575.png"
+        alt="logo"
+      />
+    </button>
+    <button class="menu-button">
+      <img
+        class="menu-icon"
+        width="18px"
+        height="12px"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAcCAYAAAATFf3WAAAA4WlDQ1BzUkdCAAAYlWNgYDzNAARMDgwMuXklRUHuTgoRkVEKDEggMbm4gAE3YGRg+HYNRDIwXNYNLGHlx6MWG+AsAloIpD8AsUg6mM3IAmInQdgSIHZ5SUEJkK0DYicXFIHYQBcz8BSFBDkD2T5AtkI6EjsJiZ2SWpwMZOcA2fEIv+XPZ2Cw+MLAwDwRIZY0jYFhezsDg8QdhJjKQgYG/lYGhm2XEWKf/cH+ZRQ7VJJaUQIS8dN3ZChILEoESzODAjQtjYHh03IGBt5IBgbhCwwMXNEQd4ABazEwoEkMJ0IAAHLYNoSjH0ezAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAWklEQVRYhe3VoRGAMBBE0Qc0QAmUQEfUQbVoFOkATDQmIhH7Zm7m5LoPBx68g92FY6rPZkxlxtp7xY+y4MZuvKEFZ+8REREjSIsbpMUt0uKIiCotbpAWtyg4P3AGg84nXwlmAAAAAElFTkSuQmCC"
+        alt="menu"
+      />
+    </button>
+  </div>
+  <nav class="desktop-nav">
+    <ul class="desktop-nav-list">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About the Game</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#benefits">Benefits</a>
+      </li>
+      <button class="logo-button">
+        <img
+          class="logo-icon"
+          width="80px"
+          height="80px"
+          src="/Matching-Story---Puzzle-Games/assets/desktop-logo-2e9501ac.png"
+          alt="logo"
+        />
+      </button>
+      <li class="nav-item">
+        <a class="nav-link" href="#gallery">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#reviews">Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#why">Why us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#fag">FAQ</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<div class="backdrop">
+  <div class="background">
+    <nav class="nav">
+      <button class="close-button" type="button" aria-label="Close modal">
+        <img
+          class="close-icon"
+          width="17.6px"
+          height="17.6px"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAERSURBVHgB1djBDcIwDAVQAwuUDTwKo+QGR0ZhA7pR2ABG4MitOJCIgIA6sV2llv6lSesntWmrrOBVe8qWsqZcKDewrY6yy3qe8kFPGbKcKQh2hbFH3tOnQfcxYI3CL5iUcJeg/zFogcI/mJAjRNUwAQpHMCEuTfbGKGRg3np0higsxViisBZjgUIpRhOFWhgNlDpGguJgPAhWbAmKi+lAWFzUJJgS1GQYKcoEU4syxZSiqjBLmHk1dcuaeqibWvZNvRib+nRgASY/xwSFUP8LoY5CAUYdxbnQGEYNxbkAFyNGWWCqUZaYUtSjnDGmBDWvzQZtDAfl0qRmNqwW2SRH2cBza62nXMG2MPbE2PMQDt4B/48RWSm+H38AAAAASUVORK5CYII="
+          alt="X"
+        />
+      </button>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About the Game</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Benefits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Why us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+    <main>
+      <section class="hero">
+  <img class="hero-phones" src="/Matching-Story---Puzzle-Games/assets/hero-phones-cf5419f9.png" alt="two phones" />
+  <h1 class="hero-title">Matching Story - Puzzle Games</h1>
+  <p class="hero-text">
+    Solve puzzles, unlock stories, and create your magical world!
+  </p>
+  <button class="hero-button">
+    <img
+      class="google-play-icon"
+      width="23px"
+      height="26px"
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAA1CAYAAAA+qNlvAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQvSURBVHgB1Zk/bBNXHMd/793ZbZJWhSpJm6qiTqXOdVu6URFDM3RLMpUy1B06VB2ajF3ay0ClTm0GJgabAQISEEsMIHCIkUBC/IsXGBBSjJAQhH8GrCTE53u835Fn2c7Zd+/dOxI+g+98fr77+Oevf/fuDPCWQsRKMjOyxeymfzBG0nxjghEoEwZFh7GD1/ecyMImwxVPTv+YMEh1DoW9BjFg2RpzJot7ciXYJBA/6ebRzLId5+Bm+ADUgKoVSBphxDIInft6eiwNGwx959kPX8q8gQBJUEIy3xwZW0hOjyRggyC79lXYyoczsLo1BypsVP4pPrz7ZBTMFztABf4NpDE+2w+PjcMbxK24eLLUfwDs9y+AKrz6JXCciWs/5dS+PgmaxJGw8sibiA9t3dC9+KtybAQYH5MYC9uPjv0NEbGu4gIdlUcwPozBpO6zb1txRJf8GkWb1UZ1xYd2elFHbBpIYnx4/8/o6P/Ub4Bm+Xr7DHv27RiVRjTHxgXzT2vO6JW9uSJI4ltxge7KI5/Q5cTx3nPzq3kjs3wq4HxpjcDiiE75AboE+z+4CAPG0uv2GTMXqrNm4PYpJY7okG+UboKBxau/sHrGSPvtQ1ocCSPfVnoNnH0SSjLVvDnTKT5K4kjXo71AX26Teo+fdAsjbnzOmv95fQBlceJ0Q8+9PwPLS0o3HAjGjZgx1xofZXF3nwHllaXFcaAen3lR/VDi7k595MNKt5Dk8ZnBldDiSDt5zdKC5MuzpqVFHGmVj0jahRLYqU0cEfKfVnsjk15jSKs40r/0HP7J3YX+x4GmQMpoFe9buQ9/XZ+A3vJDeHHoC6gtdkFEFLWJC2lcImzFiEyeETKlRbzbrjRJ1w8QgTyXLsV3V7OhxdtJ1w+kUZ5fu56vUSOF66HEhXSicrvjuNDy/JY3v/09ER+2h7pSKyXcpCweVFqA8pVjn4PzLA4y8N40ZdL3BuPD1f8bt6tNayWlBSiNlQ8ij7GwDXMw/r09TlLlcuvr8hcSitICP3n88fEypxpj4YXcpVtIaYGnPM8xF56M0Z6vYsN2wW8fwS+WNUkLmuQJ5GxqorDlFQsvAonrlhY45fj55ye3pWK77dFOsfDC9BsQhTT/64a3N5joP3clC4p0vgUXgTT/8U1Waj2DYaSRthXXLo1nvbiRHjh9qQQa8BTXK01KhDi/9M1eLYBG1onrksYcO3wW91H+sgURsE7851v7w/dpBlPLTo81WCgEam0qNIn/dvNf2Hn/NCjDc0wosz7WHAsv6uJhpHW0N1ncdqgq7Qpram+ymL/f2Hfnuwf5z0AWnL1pbG+ymDsWZ7N8KfG3XjTtTRbydCi5pWrE53kJEx0HRtzeZKFbC8VyLUZTWMl2g7C9YY43izRCGp8s7vo2zRdpRl5Xn1/n5QzKcn35jY2FF68AI+hKFEv2PtcAAAAASUVORK5CYII="
+      alt=""
+    /><span class="google-play-text">Play Now on</span>
+    <span class="google-play-store">Google play</span>
+  </button>
+</section>
+
+      <section class="about">
+  <h2 class="about-title">About the Game</h2>
+  <p class="about-text">
+    Matching Story - Puzzle Games offers an enchanting adventure where puzzles
+    meet storytelling. Match tiles, solve intricate puzzles, and unlock chapters
+    of an immersive narrative. As you progress, you'll meet charming characters,
+    discover hidden treasures, and transform magical worlds. It's a perfect
+    blend of strategy, creativity, and relaxation!
+    <img
+      width="64px"
+      height="115px"
+      class="about-girl"
+      src="/Matching-Story---Puzzle-Games/assets/about-girl-bc8a6008.png"
+      alt=""
+    />
+  </p>
+</section>
+
+      <section class="benefits">
+  <h2 class="benefits-title">Benefits</h2>
+  <ul class="benefits-list">
+    <li class="benefits-item">
+      <img
+        class="benefits-butterfly-1"
+        src="/Matching-Story---Puzzle-Games/assets/benefits-butterfly-1-f4e27f31.png"
+        alt=""
+      />
+      <h3>Engaging Gameplay</h3>
+      <p>A unique mix of matching puzzles and an evolving storyline.</p>
+    </li>
+    <li class="benefits-item">
+      <h3>Daily Rewards</h3>
+      <p>Keep coming back for surprises, rare items, and bonus boosts.</p>
+    </li>
+    <li class="benefits-item">
+      <h3>Rich Visuals</h3>
+      <p>
+        Stunning hand-drawn scenes and vibrant animations that captivate
+        players.
+      </p>
+    </li>
+    <li class="benefits-item">
+      <h3>Magical Narrative</h3>
+      <p>Uncover stories and interact with characters as you solve puzzles.</p>
+    </li>
+    <li class="benefits-item">
+      <img
+        class="benefits-butterfly-2"
+        src="/Matching-Story---Puzzle-Games/assets/benefits-butterfly-2-fb921920.png"
+        alt=""
+      />
+      <h3>Relaxing Challenges</h3>
+      <p>Designed to unwind your mind while keeping you engaged.</p>
+    </li>
+  </ul>
+</section>
+
+      <section id="gallery" class="gallery">
+  <h2 class="section-title">Gallery</h2>
+  <swiper-container>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_1_small-c7b92b0d.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_1-7c3f7fa7.png "
+              type="image/png"
+            />
+            <img
+              class="gallery-image"
+              src="/Matching-Story---Puzzle-Games/assets/image_1_small-c7b92b0d.png"
+              alt="img_1"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_2_small-de6029eb.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_2-4f708271.png "
+              type="image/png"
+            />
+            <img
+              class="gallery-image"
+              src="/Matching-Story---Puzzle-Games/assets/image_2_small-de6029eb.png"
+              alt="img_1"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_3_small-a2246f7d.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_3-a04013cc.png "
+              type="image/png"
+            />
+            <img
+              class="gallery-image"
+              src="/Matching-Story---Puzzle-Games/assets/image_3_small-a2246f7d.png"
+              alt="img_1"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_4_small-4e88a26e.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_4-96e65fa1.png "
+              type="image/png"
+            />
+            <img
+              class="gallery-image"
+              src="/Matching-Story---Puzzle-Games/assets/image_4_small-4e88a26e.png"
+              alt="img_1"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_5_small-5c228750.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_5-82bea406.png "
+              type="image/png"
+            />
+            <img
+              class="gallery-image"
+              src="/Matching-Story---Puzzle-Games/assets/image_5_small-5c228750.png"
+              alt="img_1"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_6_small-013b47ef.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_6-d3d3e8df.png "
+              type="image/png"
+            />
+            <img
+              class="gallery-image"
+              src="/Matching-Story---Puzzle-Games/assets/image_6_small-013b47ef.png"
+              alt="img_1"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_7_small-eb0e8f5b.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_7-033f6684.png "
+              type="image/png"
+            />
+            <img
+              class="gallery-image"
+              src="/Matching-Story---Puzzle-Games/assets/image_7_small-eb0e8f5b.png"
+              alt="img_1"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_8_small-d7761053.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_8-482d4d57.png "
+              type="image/png"
+            />
+            <img
+              class="gallery-image"
+              src="/Matching-Story---Puzzle-Games/assets/image_8_small-d7761053.png"
+              alt="img_1"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_9_small-b88cf5a3.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_9-ed976195.png "
+              type="image/png"
+            />
+            <img
+              class="gallery-image"
+              src="/Matching-Story---Puzzle-Games/assets/image_9_small-b88cf5a3.png"
+              alt="img_1"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="img/gallery/image_10_small"
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_10-c264eedf.png "
+              type="image/png"
+            />
+            <img
+              class="gallery-image"
+              src="img/gallery/image_10_small"
+              alt="img_1"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="swiper-pagination" style="position: unset"></div>
+      <div class="swiper-button-next">
+        <div class="swiper-slide">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/index_finger_right-fcddc874.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/index_finger_right-desk-dc2c716f.png "
+              type="image/png"
+            />
+            <img src="/Matching-Story---Puzzle-Games/assets/index_finger_right-fcddc874.png" alt="next" />
+          </picture>
+        </div>
+      </div>
+      <div class="swiper-button-prev">
+        <picture>
+          <source
+            media="(max-width: 1199.98px)"
+            srcset="/Matching-Story---Puzzle-Games/assets/index_finger_left-1cae3d6a.png "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="/Matching-Story---Puzzle-Games/assets/index_finger_left-desk-aeec51c5.png "
+            type="image/png"
+          />
+          <img src="/Matching-Story---Puzzle-Games/assets/index_finger_left-1cae3d6a.png" alt="prew" />
+        </picture>
+      </div>
+    </div>
+  </swiper-container>
+</section>
+
+      <section id="reviews" class="section">
+  <h2 class="section-title">Reviews</h2>
+  <ul class="reviews-list">
+    <li class="reviews-item">
+      <picture>
+        <source
+          media="(max-width: 1199.98px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/item-1-750fcb96.png "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/cloud_1-229e6f2c.png "
+          type="image/png"
+        />
+        <img class="item-1" src="/Matching-Story---Puzzle-Games/assets/item-1-750fcb96.png" alt="cloud" />
+      </picture>
+      <div class="reviews-item-1-wrapper">
+        <picture>
+          <source
+            media="(max-width: 1199.98px)"
+            srcset="/Matching-Story---Puzzle-Games/assets/Ellipse_11-ba8c3468.png "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="/Matching-Story---Puzzle-Games/assets/review_1-9b355167.png "
+            type="image/png"
+          />
+          <img
+            class="reviews-item-img"
+            src="/Matching-Story---Puzzle-Games/assets/Ellipse_11-ba8c3468.png"
+            alt="user-image"
+          />
+        </picture>
+        <h3 class="reviews-nickname">PuzzleMaster87</h3>
+        <p class="reviews-text">
+          One of the best puzzle games I’ve played! The story keeps me hooked,
+          and the puzzles are so fun!
+        </p>
+      </div>
+    </li>
+    <li class="reviews-item">
+      <picture>
+        <source
+          media="(max-width: 1199.98px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/item-2-8b007155.png "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/cloud_2-308564bd.png "
+          type="image/png"
+        />
+        <img class="item-2" src="/Matching-Story---Puzzle-Games/assets/item-2-8b007155.png" alt="cloud" />
+      </picture>
+      <div class="reviews-item-2-wrapper">
+        <picture>
+          <source
+            media="(max-width: 1199.98px)"
+            srcset="/Matching-Story---Puzzle-Games/assets/Ellipse_13-c79ca355.png "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="/Matching-Story---Puzzle-Games/assets/review_2-87ffbdd2.png "
+            type="image/png"
+          />
+          <img
+            class="reviews-item-img"
+            src="/Matching-Story---Puzzle-Games/assets/Ellipse_13-c79ca355.png"
+            alt="user-image"
+          />
+        </picture>
+        <h3 class="reviews-nickname">MagicalMindy</h3>
+        <p class="reviews-text">
+          I love how the game blends matching tiles with storytelling. The
+          characters are adorable!
+        </p>
+      </div>
+    </li>
+    <li class="reviews-item">
+      <picture>
+        <source
+          media="(max-width: 1199.98px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/item-3-a02d7996.png "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/cloud_3-8f0950c9.png "
+          type="image/png"
+        />
+        <img class="item-3" src="/Matching-Story---Puzzle-Games/assets/item-3-a02d7996.png" alt="cloud" />
+      </picture>
+      <div class="reviews-item-3-wrapper">
+        <picture>
+          <source
+            media="(max-width: 1199.98px)"
+            srcset="/Matching-Story---Puzzle-Games/assets/Ellipse_14-ec2494d0.png "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="/Matching-Story---Puzzle-Games/assets/review_3-2d3747e5.png "
+            type="image/png"
+          />
+          <img
+            class="reviews-item-img"
+            src="/Matching-Story---Puzzle-Games/assets/Ellipse_14-ec2494d0.png"
+            alt="user-image"
+          />
+        </picture>
+        <h3 class="reviews-nickname">RelaxAndPlay</h3>
+        <p class="reviews-text">
+          Perfect for unwinding after a long day. The visuals are stunning, and
+          the gameplay is smooth.
+        </p>
+      </div>
+    </li>
+    <li class="reviews-item">
+      <picture>
+        <source
+          media="(max-width: 1199.98px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/item-4-3e4ddc7e.png "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/cloud_4-e32fdcd1.png "
+          type="image/png"
+        />
+        <img class="item-4" src="/Matching-Story---Puzzle-Games/assets/item-4-3e4ddc7e.png" alt="cloud" />
+      </picture>
+      <div class="reviews-item-4-wrapper">
+        <picture>
+          <source
+            media="(max-width: 1199.98px)"
+            srcset="/Matching-Story---Puzzle-Games/assets/Ellipse_12-5779ed50.png "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="/Matching-Story---Puzzle-Games/assets/review_4-53c385e0.png "
+            type="image/png"
+          />
+          <img
+            class="reviews-item-img"
+            src="/Matching-Story---Puzzle-Games/assets/Ellipse_12-5779ed50.png"
+            alt="user-image"
+          />
+        </picture>
+        <h3 class="reviews-nickname">GameLover99</h3>
+        <p class="reviews-text">
+          I can't get enough of the daily rewards and challenges! Keeps me
+          coming back every day.
+        </p>
+      </div>
+    </li>
+    <li class="reviews-item">
+      <picture>
+        <source
+          media="(max-width: 1199.98px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/item-5-a74a8533.png "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/cloud_5-edabdb82.png "
+          type="image/png"
+        />
+        <img class="item-5" src="/Matching-Story---Puzzle-Games/assets/item-5-a74a8533.png" alt="cloud" />
+      </picture>
+      <div class="reviews-item-5-wrapper">
+        <picture>
+          <source
+            media="(max-width: 1199.98px)"
+            srcset="/Matching-Story---Puzzle-Games/assets/Ellipse_15-0111d03b.png "
+            type="image/png"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="/Matching-Story---Puzzle-Games/assets/review_5-13868afe.png "
+            type="image/png"
+          />
+          <img
+            class="reviews-item-img"
+            src="/Matching-Story---Puzzle-Games/assets/Ellipse_15-0111d03b.png"
+            alt="user-image"
+          />
+        </picture>
+        <h3 class="reviews-nickname">HappyMerger</h3>
+        <p class="reviews-text">
+          Such a creative twist on matching games. Highly recommend for puzzle
+          lovers!
+        </p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+      <section id="why-us" class="section container cloud-position">
+  <img class="first-cloud" src="/Matching-Story---Puzzle-Games/assets/cloud-cc9d95ce.png" alt="cloud" />
+  <img class="second-cloud" src="/Matching-Story---Puzzle-Games/assets/cloud2-1663bb4e.png" alt="cloud" />
+  <img class="third-cloud" src="/Matching-Story---Puzzle-Games/assets/cloud-desk-a07f31fe.png" alt="cloud" />
+  <h2 class="section-title on-cloud">Why us?</h2>
+  <ul class="why-list">
+    <li class="why-list-item">
+      <picture>
+        <source
+          media="(max-width: 1199.98px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/one-5e77ae7f.png "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/one-desk-8bddcf2a.png "
+          type="image/png"
+        />
+        <img class="why-list-item-img one" src="/Matching-Story---Puzzle-Games/assets/one-5e77ae7f.png" alt="one" />
+      </picture>
+
+      <h3 class="why-list-item-title">Unique Blend of Gameplay</h3>
+      <p class="why-list-item-text">
+        Combines matching puzzles with an engaging narrative for a fresh and
+        exciting experience.
+      </p>
+    </li>
+    <li class="why-list-item">
+      <picture>
+        <source
+          media="(max-width: 1199.98px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/two-6efc5a31.png "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/two-desk-dc263942.png "
+          type="image/png"
+        />
+        <img class="why-list-item-img two" src="/Matching-Story---Puzzle-Games/assets/two-6efc5a31.png" alt="two" />
+      </picture>
+      <h3 class="why-list-item-title">Character-Driven Storylines</h3>
+      <p class="why-list-item-text">
+        Form connections with magical characters who grow and evolve with the
+        story.
+      </p>
+    </li>
+    <li class="why-list-item">
+      <picture>
+        <source
+          media="(max-width: 1199.98px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/three-e71ef680.png "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/three-desk-360af1c6.png "
+          type="image/png"
+        />
+        <img
+          class="why-list-item-img three"
+          src="/Matching-Story---Puzzle-Games/assets/three-e71ef680.png"
+          alt="three"
+        />
+      </picture>
+
+      <h3 class="why-list-item-title">Regular Updates</h3>
+      <p class="why-list-item-text">
+        Regular Updates: New chapters, puzzles, and surprises keep the game
+        dynamic and ever-evolving.
+      </p>
+    </li>
+    <li class="why-list-item">
+      <picture>
+        <source
+          media="(max-width: 1199.98px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/four-5b9a22f8.png "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="/Matching-Story---Puzzle-Games/assets/four-desk-270b52e4.png "
+          type="image/png"
+        />
+        <img
+          class="why-list-item-img four"
+          src="/Matching-Story---Puzzle-Games/assets/four-5b9a22f8.png"
+          alt="four"
+        />
+      </picture>
+
+      <h3 class="why-list-item-title">Community Engagement</h3>
+      <p class="why-list-item-text">
+        Join a growing community of players sharing tips, strategies, and love
+        for the game.
+      </p>
+    </li>
+  </ul>
+</section>
+
+      <section id="faq" class="section container fairy-position">
+  <picture>
+    <source
+      media="(max-width: 1199.98px)"
+      srcset="/Matching-Story---Puzzle-Games/assets/fairy_small-e818183d.png "
+      type="image/png"
+    />
+    <source
+      media="(min-width: 1200px)"
+      srcset="/Matching-Story---Puzzle-Games/assets/fairy-b77cba68.png "
+      type="image/png"
+    />
+    <img class="faq-fairy" src="/Matching-Story---Puzzle-Games/assets/fairy_small-e818183d.png" alt="arrow" />
+  </picture>
+  <img class="faq-first-cloud" src="/Matching-Story---Puzzle-Games/assets/faq_cloud-5266be51.png" alt="arrow" />
+  <img class="faq-second-cloud" src="/Matching-Story---Puzzle-Games/assets/faq_cloud2-faf0462b.png" alt="arrow" />
+  <h2 class="section-title">FAQ</h2>
+  <ul class="faq-list">
+    <li class="faq-list-item">
+      <div class="faq-list-item-container">
+        <h3 class="faq-list-item-title">Is this game free to play?</h3>
+        <div class="faq-list-item-svg">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAgCAYAAABdP1tmAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEnSURBVHgB1dnhDYIwEAXgYwM3oBs4gm6gGziKIziCMziBOIEj1A1wA+yZXhRCKLS93vGSlyi2Sb+c4QdU0M/Ode8/v1xvrm/QlY3rwdX4743rY7gIf7y7doNav1lL8CwtjJ+zpkXGX+gmegL54BmmzogGnB6cAws1oEIYKlrgOXOxFGouhqYU/LtJopZgqItBpVAxmO+ELhEbuVExGOwVNxsYvxVKoWIxFv5u3VslqFhM6w29SKOyYqRRLBgpFCumNKoIphSqKIYbFYuxkIDhQolMhgulApMLlYKpgSkpKDWTkUJZKICBQqgikxmGCyWCoeRGiWIouVAqMJRUlCoMJRalEkNZilKNocxFrQJDCaFWhaEYGH/mh9fYMBXw5wg/AL72aIAxH7cyp+z3p+k5AAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <img
+              class="faq-list-item-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC"
+              alt="arrow"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer-item-wrapper">
+          <p class="faq-list-item-answer">
+            Yes, the game is free to download and play, with optional in-app
+            purchases available.
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="faq-list-item">
+      <div class="faq-list-item-container">
+        <h3 class="faq-list-item-title">Can I play offline?</h3>
+        <div class="faq-list-item-svg">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAgCAYAAABdP1tmAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEnSURBVHgB1dnhDYIwEAXgYwM3oBs4gm6gGziKIziCMziBOIEj1A1wA+yZXhRCKLS93vGSlyi2Sb+c4QdU0M/Ode8/v1xvrm/QlY3rwdX4743rY7gIf7y7doNav1lL8CwtjJ+zpkXGX+gmegL54BmmzogGnB6cAws1oEIYKlrgOXOxFGouhqYU/LtJopZgqItBpVAxmO+ELhEbuVExGOwVNxsYvxVKoWIxFv5u3VslqFhM6w29SKOyYqRRLBgpFCumNKoIphSqKIYbFYuxkIDhQolMhgulApMLlYKpgSkpKDWTkUJZKICBQqgikxmGCyWCoeRGiWIouVAqMJRUlCoMJRalEkNZilKNocxFrQJDCaFWhaEYGH/mh9fYMBXw5wg/AL72aIAxH7cyp+z3p+k5AAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <img
+              class="faq-list-item-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC"
+              alt="arrow"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer-item-wrapper">
+          <p class="faq-list-item-answer">
+            Some features require an internet connection, but you can enjoy
+            puzzles offline.
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="faq-list-item">
+      <div class="faq-list-item-container">
+        <h3 class="faq-list-item-title">Are there daily rewards?</h3>
+        <div class="faq-list-item-svg">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAgCAYAAABdP1tmAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEnSURBVHgB1dnhDYIwEAXgYwM3oBs4gm6gGziKIziCMziBOIEj1A1wA+yZXhRCKLS93vGSlyi2Sb+c4QdU0M/Ode8/v1xvrm/QlY3rwdX4743rY7gIf7y7doNav1lL8CwtjJ+zpkXGX+gmegL54BmmzogGnB6cAws1oEIYKlrgOXOxFGouhqYU/LtJopZgqItBpVAxmO+ELhEbuVExGOwVNxsYvxVKoWIxFv5u3VslqFhM6w29SKOyYqRRLBgpFCumNKoIphSqKIYbFYuxkIDhQolMhgulApMLlYKpgSkpKDWTkUJZKICBQqgikxmGCyWCoeRGiWIouVAqMJRUlCoMJRalEkNZilKNocxFrQJDCaFWhaEYGH/mh9fYMBXw5wg/AL72aIAxH7cyp+z3p+k5AAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <img
+              class="faq-list-item-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC"
+              alt="arrow"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer-item-wrapper">
+          <p class="faq-list-item-answer">
+            Yes! Log in daily for exclusive rewards, boosts, and surprises.
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="faq-list-item">
+      <div class="faq-list-item-container">
+        <h3 class="faq-list-item-title">How often are updates released?</h3>
+        <div class="faq-list-item-svg">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAgCAYAAABdP1tmAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEnSURBVHgB1dnhDYIwEAXgYwM3oBs4gm6gGziKIziCMziBOIEj1A1wA+yZXhRCKLS93vGSlyi2Sb+c4QdU0M/Ode8/v1xvrm/QlY3rwdX4743rY7gIf7y7doNav1lL8CwtjJ+zpkXGX+gmegL54BmmzogGnB6cAws1oEIYKlrgOXOxFGouhqYU/LtJopZgqItBpVAxmO+ELhEbuVExGOwVNxsYvxVKoWIxFv5u3VslqFhM6w29SKOyYqRRLBgpFCumNKoIphSqKIYbFYuxkIDhQolMhgulApMLlYKpgSkpKDWTkUJZKICBQqgikxmGCyWCoeRGiWIouVAqMJRUlCoMJRalEkNZilKNocxFrQJDCaFWhaEYGH/mh9fYMBXw5wg/AL72aIAxH7cyp+z3p+k5AAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <img
+              class="faq-list-item-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC"
+              alt="arrow"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer-item-wrapper">
+          <p class="faq-list-item-answer">
+            Updates are released regularly, adding new puzzles, story chapters,
+            and events.
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="faq-list-item">
+      <div class="faq-list-item-container">
+        <h3 class="faq-list-item-title">What devices are supported?</h3>
+        <div class="faq-list-item-svg">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAgCAYAAABdP1tmAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEnSURBVHgB1dnhDYIwEAXgYwM3oBs4gm6gGziKIziCMziBOIEj1A1wA+yZXhRCKLS93vGSlyi2Sb+c4QdU0M/Ode8/v1xvrm/QlY3rwdX4743rY7gIf7y7doNav1lL8CwtjJ+zpkXGX+gmegL54BmmzogGnB6cAws1oEIYKlrgOXOxFGouhqYU/LtJopZgqItBpVAxmO+ELhEbuVExGOwVNxsYvxVKoWIxFv5u3VslqFhM6w29SKOyYqRRLBgpFCumNKoIphSqKIYbFYuxkIDhQolMhgulApMLlYKpgSkpKDWTkUJZKICBQqgikxmGCyWCoeRGiWIouVAqMJRUlCoMJRalEkNZilKNocxFrQJDCaFWhaEYGH/mh9fYMBXw5wg/AL72aIAxH7cyp+z3p+k5AAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <img
+              class="faq-list-item-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC"
+              alt="arrow"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer-item-wrapper">
+          <p class="faq-list-item-answer">
+            The game supports most Android and iOS devices with updated
+            operating systems.
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="faq-list-item">
+      <div class="faq-list-item-container">
+        <h3 class="faq-list-item-title">Are there ads in the game?</h3>
+        <div class="faq-list-item-svg">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAgCAYAAABdP1tmAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEnSURBVHgB1dnhDYIwEAXgYwM3oBs4gm6gGziKIziCMziBOIEj1A1wA+yZXhRCKLS93vGSlyi2Sb+c4QdU0M/Ode8/v1xvrm/QlY3rwdX4743rY7gIf7y7doNav1lL8CwtjJ+zpkXGX+gmegL54BmmzogGnB6cAws1oEIYKlrgOXOxFGouhqYU/LtJopZgqItBpVAxmO+ELhEbuVExGOwVNxsYvxVKoWIxFv5u3VslqFhM6w29SKOyYqRRLBgpFCumNKoIphSqKIYbFYuxkIDhQolMhgulApMLlYKpgSkpKDWTkUJZKICBQqgikxmGCyWCoeRGiWIouVAqMJRUlCoMJRalEkNZilKNocxFrQJDCaFWhaEYGH/mh9fYMBXw5wg/AL72aIAxH7cyp+z3p+k5AAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <img
+              class="faq-list-item-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC"
+              alt="arrow"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer-item-wrapper">
+          <p class="faq-list-item-answer">
+            Yes, but ads are optional and provide additional rewards if watched.
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="faq-list-item">
+      <div class="faq-list-item-container">
+        <h3 class="faq-list-item-title">
+          Can I sync my progress across devices?
+        </h3>
+        <div class="faq-list-item-svg">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAgCAYAAABdP1tmAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEnSURBVHgB1dnhDYIwEAXgYwM3oBs4gm6gGziKIziCMziBOIEj1A1wA+yZXhRCKLS93vGSlyi2Sb+c4QdU0M/Ode8/v1xvrm/QlY3rwdX4743rY7gIf7y7doNav1lL8CwtjJ+zpkXGX+gmegL54BmmzogGnB6cAws1oEIYKlrgOXOxFGouhqYU/LtJopZgqItBpVAxmO+ELhEbuVExGOwVNxsYvxVKoWIxFv5u3VslqFhM6w29SKOyYqRRLBgpFCumNKoIphSqKIYbFYuxkIDhQolMhgulApMLlYKpgSkpKDWTkUJZKICBQqgikxmGCyWCoeRGiWIouVAqMJRUlCoMJRalEkNZilKNocxFrQJDCaFWhaEYGH/mh9fYMBXw5wg/AL72aIAxH7cyp+z3p+k5AAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <img
+              class="faq-list-item-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC"
+              alt="arrow"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer-item-wrapper">
+          <p class="faq-list-item-answer">
+            Absolutely! Connect your account to save progress and sync it on
+            multiple devices
+          </p>
+        </div>
+      </div>
+    </li>
+    <li class="faq-list-item">
+      <div class="faq-list-item-container">
+        <h3 class="faq-list-item-title">Is this game suitable for all ages?</h3>
+        <div class="faq-list-item-svg">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAgCAYAAABdP1tmAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEnSURBVHgB1dnhDYIwEAXgYwM3oBs4gm6gGziKIziCMziBOIEj1A1wA+yZXhRCKLS93vGSlyi2Sb+c4QdU0M/Ode8/v1xvrm/QlY3rwdX4743rY7gIf7y7doNav1lL8CwtjJ+zpkXGX+gmegL54BmmzogGnB6cAws1oEIYKlrgOXOxFGouhqYU/LtJopZgqItBpVAxmO+ELhEbuVExGOwVNxsYvxVKoWIxFv5u3VslqFhM6w29SKOyYqRRLBgpFCumNKoIphSqKIYbFYuxkIDhQolMhgulApMLlYKpgSkpKDWTkUJZKICBQqgikxmGCyWCoeRGiWIouVAqMJRUlCoMJRalEkNZilKNocxFrQJDCaFWhaEYGH/mh9fYMBXw5wg/AL72aIAxH7cyp+z3p+k5AAAAAElFTkSuQmCC "
+              type="image/png"
+            />
+            <img
+              class="faq-list-item-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVHgB7ZLBCYBADARTgh1oZ5ZgCSnBEq4ES7CEK0kj5BEONCtGRMjA/jY7nxAlyS8ZJEUy3riZ9KZHyqtk0zDQZ9NfgD7N5sCTcNMtBNBJKiBpx6veQniSR+OeJGT8ShI27klCxs8koeNWcrww0wvjSfIhO/EBPVhqT7nIAAAAAElFTkSuQmCC"
+              alt="arrow"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="faq-answer-wrapper">
+        <div class="faq-answer-item-wrapper">
+          <p class="faq-list-item-answer">
+            Yes, it’s family-friendly and suitable for players of all ages.
+          </p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="footer-content">
+    <a href="./privacy-policy.html" class="footer-link">Privacy Policy</a>
+    <span class="divider">/</span>
+    <button class="footer-logo-button">
+      <img
+        class="footer-logo-icon"
+        width="50px"
+        height="50px"
+        src="/Matching-Story---Puzzle-Games/assets/desktop-logo-2e9501ac.png"
+        alt="logo"
+      />
+    </button>
+    <a href="page-3.html" class="footer-link">Terms & Conditions</a>
+  </div>
+  <p class="footer-text">
+    All rights reserved, 2025.
+    <a href="https://luckyblazepro.com" class="footer-link"
+      >luckyblazepro.com</a
+    >
+  </p>
+</footer>
+
+
+    
+    
+  </body>
+</html>
