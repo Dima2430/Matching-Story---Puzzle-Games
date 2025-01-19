@@ -20,6 +20,19 @@
   align-items: center;
   text-align: center;
   box-shadow: 3px 3px 7px 0px #00000040;
+  transition: background-color 0.2s ease-in-out;
+
+  @media screen and (min-width: 1200px) {
+    width: 252px;
+    height: 65px;
+    font-size: 20px;
+    top: 48px;
+    left: 60px;
+
+    &:hover {
+      background-color: #6fccfd;
+    }
+  }
 }
 h1,
 h2 {
