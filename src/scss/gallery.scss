@@ -4,9 +4,11 @@
   padding-right: 24px;
   padding-left: 24px;
   padding-bottom: 40px;
+  scroll-margin-top: 50px;
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    scroll-margin-top: 100px;
   }
 }
 

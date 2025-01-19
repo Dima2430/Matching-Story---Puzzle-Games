@@ -29,6 +29,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: $_main_bg_color;
   overflow: visible;
@@ -38,10 +42,12 @@ body {
   margin: 0 auto;
   max-width: 320px;
   padding-bottom: 40px;
+  scroll-margin-top: 50px;
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 100px;
     max-width: 1200px;
+    scroll-margin-top: 100px;
   }
 }
 
