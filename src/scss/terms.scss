@@ -34,8 +34,8 @@
     }
   }
 }
-h1,
-h2 {
+.terms h1,
+.terms h2 {
   font-weight: 700;
   font-size: 20px;
   line-height: 26.38px;
@@ -45,11 +45,11 @@ h2 {
   justify-content: center;
   margin-bottom: 24px;
 }
-p {
+.terms p {
   font-size: 14px;
   line-height: 16.8px;
 }
-li {
+.terms li {
   margin-bottom: 24px;
 }
 .terms-li {

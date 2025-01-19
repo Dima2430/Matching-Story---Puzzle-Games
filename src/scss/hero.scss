@@ -3,6 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  scroll-margin-top: 100px;
+}
+.hero div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .hero-phones {
   width: 239px;
@@ -59,4 +66,67 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 16.8px;
+}
+.desktop-phones {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-left: 612px;
+    padding-bottom: 121px;
+    padding-top: 148px;
+    height: 646px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-image: url('../img/desktop-phones.png');
+    background-position: 10% 58%;
+    background-size: 600px 543px;
+    background-repeat: no-repeat;
+  }
+
+  .hero-title {
+    width: 485px;
+    font-size: 40px;
+    line-height: 52.75px;
+    font-weight: 800;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+  .hero-text {
+    text-align: left;
+    width: 524px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    margin-bottom: 100px;
+  }
+  .hero div {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .hero-phones {
+    display: none;
+  }
+  .hero-button {
+    width: 252px;
+    height: 71px;
+    border-radius: 25px;
+    padding-left: 102px;
+    padding-top: 11px;
+  }
+  .google-play-icon {
+    width: 50px;
+    height: 55px;
+  }
+  .google-play-text {
+    font-size: 18px;
+    line-height: 21.6px;
+    width: 100px;
+  }
+  .google-play-store {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
