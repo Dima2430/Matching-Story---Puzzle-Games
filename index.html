@@ -21,7 +21,7 @@
     <script type="module" crossorigin src="/Matching-Story---Puzzle-Games/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/Matching-Story---Puzzle-Games/assets/vendor-55f6e560.js">
     <link rel="stylesheet" href="/Matching-Story---Puzzle-Games/assets/vendor-0ded8c46.css">
-    <link rel="stylesheet" href="/Matching-Story---Puzzle-Games/assets/styles-9a11cc3a.css">
+    <link rel="stylesheet" href="/Matching-Story---Puzzle-Games/assets/styles-2cb32b00.css">
   </head>
   <body>
     <header class="header">
@@ -48,7 +48,7 @@
   <nav class="desktop-nav">
     <ul class="desktop-nav-list">
       <li class="nav-item">
-        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#hero">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#about">About the Game</a>
@@ -94,25 +94,25 @@
       </button>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#hero">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About the Game</a>
+          <a class="nav-link" href="#about">About the Game</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Benefits</a>
+          <a class="nav-link" href="#benefits">Benefits</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Gallery</a>
+          <a class="nav-link" href="#gallery">Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Reviews</a>
+          <a class="nav-link" href="#reviews">Reviews</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Why us</a>
+          <a class="nav-link" href="#why">Why us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">FAQ</a>
+          <a class="nav-link" href="#faq">FAQ</a>
         </li>
       </ul>
     </nav>
@@ -120,25 +120,28 @@
 </div>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
   <img class="hero-phones" src="/Matching-Story---Puzzle-Games/assets/hero-phones-cf5419f9.png" alt="two phones" />
-  <h1 class="hero-title">Matching Story - Puzzle Games</h1>
-  <p class="hero-text">
-    Solve puzzles, unlock stories, and create your magical world!
-  </p>
-  <button class="hero-button">
-    <img
-      class="google-play-icon"
-      width="23px"
-      height="26px"
-      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAA1CAYAAAA+qNlvAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQvSURBVHgB1Zk/bBNXHMd/793ZbZJWhSpJm6qiTqXOdVu6URFDM3RLMpUy1B06VB2ajF3ay0ClTm0GJgabAQISEEsMIHCIkUBC/IsXGBBSjJAQhH8GrCTE53u835Fn2c7Zd+/dOxI+g+98fr77+Oevf/fuDPCWQsRKMjOyxeymfzBG0nxjghEoEwZFh7GD1/ecyMImwxVPTv+YMEh1DoW9BjFg2RpzJot7ciXYJBA/6ebRzLId5+Bm+ADUgKoVSBphxDIInft6eiwNGwx959kPX8q8gQBJUEIy3xwZW0hOjyRggyC79lXYyoczsLo1BypsVP4pPrz7ZBTMFztABf4NpDE+2w+PjcMbxK24eLLUfwDs9y+AKrz6JXCciWs/5dS+PgmaxJGw8sibiA9t3dC9+KtybAQYH5MYC9uPjv0NEbGu4gIdlUcwPozBpO6zb1txRJf8GkWb1UZ1xYd2elFHbBpIYnx4/8/o6P/Ub4Bm+Xr7DHv27RiVRjTHxgXzT2vO6JW9uSJI4ltxge7KI5/Q5cTx3nPzq3kjs3wq4HxpjcDiiE75AboE+z+4CAPG0uv2GTMXqrNm4PYpJY7okG+UboKBxau/sHrGSPvtQ1ocCSPfVnoNnH0SSjLVvDnTKT5K4kjXo71AX26Teo+fdAsjbnzOmv95fQBlceJ0Q8+9PwPLS0o3HAjGjZgx1xofZXF3nwHllaXFcaAen3lR/VDi7k595MNKt5Dk8ZnBldDiSDt5zdKC5MuzpqVFHGmVj0jahRLYqU0cEfKfVnsjk15jSKs40r/0HP7J3YX+x4GmQMpoFe9buQ9/XZ+A3vJDeHHoC6gtdkFEFLWJC2lcImzFiEyeETKlRbzbrjRJ1w8QgTyXLsV3V7OhxdtJ1w+kUZ5fu56vUSOF66HEhXSicrvjuNDy/JY3v/09ER+2h7pSKyXcpCweVFqA8pVjn4PzLA4y8N40ZdL3BuPD1f8bt6tNayWlBSiNlQ8ij7GwDXMw/r09TlLlcuvr8hcSitICP3n88fEypxpj4YXcpVtIaYGnPM8xF56M0Z6vYsN2wW8fwS+WNUkLmuQJ5GxqorDlFQsvAonrlhY45fj55ye3pWK77dFOsfDC9BsQhTT/64a3N5joP3clC4p0vgUXgTT/8U1Waj2DYaSRthXXLo1nvbiRHjh9qQQa8BTXK01KhDi/9M1eLYBG1onrksYcO3wW91H+sgURsE7851v7w/dpBlPLTo81WCgEam0qNIn/dvNf2Hn/NCjDc0wosz7WHAsv6uJhpHW0N1ncdqgq7Qpram+ymL/f2Hfnuwf5z0AWnL1pbG+ymDsWZ7N8KfG3XjTtTRbydCi5pWrE53kJEx0HRtzeZKFbC8VyLUZTWMl2g7C9YY43izRCGp8s7vo2zRdpRl5Xn1/n5QzKcn35jY2FF68AI+hKFEv2PtcAAAAASUVORK5CYII="
-      alt=""
-    /><span class="google-play-text">Play Now on</span>
-    <span class="google-play-store">Google play</span>
-  </button>
+
+  <div>
+    <h1 class="hero-title">Matching Story - Puzzle Games</h1>
+    <p class="hero-text">
+      Solve puzzles, unlock stories, and create your magical world!
+    </p>
+    <button class="hero-button">
+      <img
+        class="google-play-icon"
+        width="23px"
+        height="26px"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAA1CAYAAAA+qNlvAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQvSURBVHgB1Zk/bBNXHMd/793ZbZJWhSpJm6qiTqXOdVu6URFDM3RLMpUy1B06VB2ajF3ay0ClTm0GJgabAQISEEsMIHCIkUBC/IsXGBBSjJAQhH8GrCTE53u835Fn2c7Zd+/dOxI+g+98fr77+Oevf/fuDPCWQsRKMjOyxeymfzBG0nxjghEoEwZFh7GD1/ecyMImwxVPTv+YMEh1DoW9BjFg2RpzJot7ciXYJBA/6ebRzLId5+Bm+ADUgKoVSBphxDIInft6eiwNGwx959kPX8q8gQBJUEIy3xwZW0hOjyRggyC79lXYyoczsLo1BypsVP4pPrz7ZBTMFztABf4NpDE+2w+PjcMbxK24eLLUfwDs9y+AKrz6JXCciWs/5dS+PgmaxJGw8sibiA9t3dC9+KtybAQYH5MYC9uPjv0NEbGu4gIdlUcwPozBpO6zb1txRJf8GkWb1UZ1xYd2elFHbBpIYnx4/8/o6P/Ub4Bm+Xr7DHv27RiVRjTHxgXzT2vO6JW9uSJI4ltxge7KI5/Q5cTx3nPzq3kjs3wq4HxpjcDiiE75AboE+z+4CAPG0uv2GTMXqrNm4PYpJY7okG+UboKBxau/sHrGSPvtQ1ocCSPfVnoNnH0SSjLVvDnTKT5K4kjXo71AX26Teo+fdAsjbnzOmv95fQBlceJ0Q8+9PwPLS0o3HAjGjZgx1xofZXF3nwHllaXFcaAen3lR/VDi7k595MNKt5Dk8ZnBldDiSDt5zdKC5MuzpqVFHGmVj0jahRLYqU0cEfKfVnsjk15jSKs40r/0HP7J3YX+x4GmQMpoFe9buQ9/XZ+A3vJDeHHoC6gtdkFEFLWJC2lcImzFiEyeETKlRbzbrjRJ1w8QgTyXLsV3V7OhxdtJ1w+kUZ5fu56vUSOF66HEhXSicrvjuNDy/JY3v/09ER+2h7pSKyXcpCweVFqA8pVjn4PzLA4y8N40ZdL3BuPD1f8bt6tNayWlBSiNlQ8ij7GwDXMw/r09TlLlcuvr8hcSitICP3n88fEypxpj4YXcpVtIaYGnPM8xF56M0Z6vYsN2wW8fwS+WNUkLmuQJ5GxqorDlFQsvAonrlhY45fj55ye3pWK77dFOsfDC9BsQhTT/64a3N5joP3clC4p0vgUXgTT/8U1Waj2DYaSRthXXLo1nvbiRHjh9qQQa8BTXK01KhDi/9M1eLYBG1onrksYcO3wW91H+sgURsE7851v7w/dpBlPLTo81WCgEam0qNIn/dvNf2Hn/NCjDc0wosz7WHAsv6uJhpHW0N1ncdqgq7Qpram+ymL/f2Hfnuwf5z0AWnL1pbG+ymDsWZ7N8KfG3XjTtTRbydCi5pWrE53kJEx0HRtzeZKFbC8VyLUZTWMl2g7C9YY43izRCGp8s7vo2zRdpRl5Xn1/n5QzKcn35jY2FF68AI+hKFEv2PtcAAAAASUVORK5CYII="
+        alt=""
+      /><span class="google-play-text">Play Now on</span>
+      <span class="google-play-store">Google play</span>
+    </button>
+  </div>
 </section>
 
-      <section class="about">
+      <section class="about" id="about">
   <h2 class="about-title">About the Game</h2>
   <p class="about-text">
     Matching Story - Puzzle Games offers an enchanting adventure where puzzles
@@ -156,7 +159,7 @@
   </p>
 </section>
 
-      <section class="benefits">
+      <section class="benefits" id="benefits">
   <h2 class="benefits-title">Benefits</h2>
   <ul class="benefits-list">
     <li class="benefits-item">
@@ -169,6 +172,11 @@
       <p>A unique mix of matching puzzles and an evolving storyline.</p>
     </li>
     <li class="benefits-item">
+      <img
+        class="benefits-butterfly-3"
+        src="/Matching-Story---Puzzle-Games/assets/benefits-butterfly-1-f4e27f31.png"
+        alt=""
+      />
       <h3>Daily Rewards</h3>
       <p>Keep coming back for surprises, rare items, and bonus boosts.</p>
     </li>
@@ -181,7 +189,15 @@
     </li>
     <li class="benefits-item">
       <h3>Magical Narrative</h3>
-      <p>Uncover stories and interact with characters as you solve puzzles.</p>
+      <p>
+        <img
+          width="156px"
+          height="251px"
+          class="benefits-fairy"
+          src="../img/benefits-fairy.png"
+          alt=""
+        />Uncover stories and interact with characters as you solve puzzles.
+      </p>
     </li>
     <li class="benefits-item">
       <img
