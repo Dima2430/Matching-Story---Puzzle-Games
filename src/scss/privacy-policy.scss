@@ -2,10 +2,45 @@
   position: relative;
 }
 
-.clouds {
+.privacy-first-claud {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: -24px;
+  top: 70px;
+  z-index: -1;
+}
+
+.privacy-second-cloud {
+  position: absolute;
+  left: -24px;
+  top: 5px;
+  z-index: -1;
+}
+
+.privacy-third-cloud {
+  position: absolute;
+  left: -24px;
+  top: -12px;
+  z-index: -1;
+}
+
+.privacy-fourth-cloud {
+  position: absolute;
+  right: -24px;
+  bottom: 110px;
+  z-index: -1;
+}
+
+.privacy-fifth-cloud {
+  position: absolute;
+  right: -24px;
+  bottom: -70px;
+  z-index: -1;
+}
+
+.privacy-sixth-cloud {
+  position: absolute;
+  left: -24px;
+  bottom: -35px;
   z-index: -1;
 }
 
