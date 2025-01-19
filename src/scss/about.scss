@@ -3,6 +3,7 @@
   font-size: 20px;
   line-height: 26.38px;
   font-family: 'Roboto Slab', sans-serif;
+  margin-bottom: 24px;
 }
 .about {
   padding-top: 40px;
@@ -10,11 +11,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
+
   max-width: 320px;
   justify-self: center;
+  scroll-margin-top: 100px;
 }
 .about-text {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,9 +41,33 @@
 }
 .about-girl {
   position: absolute;
-  top: 33px;
+  top: -57px;
   right: -18px;
   z-index: 2;
   width: 64px;
   height: 115px;
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 0;
+  }
+  .about-girl {
+    width: 151.55px;
+    height: 257.79px;
+    top: -143px;
+    right: -49px;
+  }
+  .about-text {
+    width: 1080px;
+    height: 152px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .about-title {
+    margin-bottom: 48px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42.2px;
+  }
 }

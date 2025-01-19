@@ -1,12 +1,18 @@
 .benefits {
   padding-top: 40px;
   padding-bottom: 40px;
+  scroll-margin-top: 50px;
 }
 .benefits-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 26.38px;
   font-family: 'Roboto Slab', sans-serif;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   margin-bottom: 24px;
 }
 .benefits-butterfly-1 {
@@ -53,4 +59,90 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16.8px;
+  position: relative;
+}
+.benefits-fairy {
+  display: none;
+}
+.benefits-butterfly-3 {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 100px;
+    padding-bottom: 134px;
+  }
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    row-gap: 39px;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    justify-self: center;
+  }
+  .benefits-item {
+    width: 436px;
+    height: 160px;
+    padding: 32px;
+    justify-content: space-between;
+  }
+
+  .benefits-item h3 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .benefits-item p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .benefits-item:nth-child(1) {
+    margin-right: 128px;
+  }
+  .benefits-item:nth-child(3) {
+    margin-right: 256px;
+    margin-left: 256px;
+  }
+  .benefits-item:nth-child(5) {
+    margin-left: 128px;
+  }
+  .benefits-fairy {
+    display: block;
+    position: absolute;
+    top: -231px;
+    left: -84px;
+    width: 156px;
+    height: auto;
+  }
+  .benefits-butterfly-1 {
+    display: none;
+  }
+  .benefits-butterfly-3 {
+    display: block;
+    position: absolute;
+    top: -41px;
+    right: -47px;
+    width: 42px;
+    height: 39px;
+    width: 89px;
+    height: 83px;
+  }
+  .benefits-butterfly-2 {
+    width: 56px;
+    height: 52px;
+    top: 130px;
+    left: -29px;
+  }
+  .benefits-title {
+    font-size: 32px;
+    line-height: 42.2px;
+    font-weight: 700;
+    margin-bottom: 48px;
+  }
 }
