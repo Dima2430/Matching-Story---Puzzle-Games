@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Matching-Story---Puzzle-Games/favicon.svg" />
+    <link rel="icon" type="image/png+xml" href="/Matching-Story---Puzzle-Games/favicon.png" sizes="16x16" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Matching Story - Puzzle Games</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,16 +12,10 @@
       rel="stylesheet"
     />
     
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
     <script type="module" crossorigin src="/Matching-Story---Puzzle-Games/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/Matching-Story---Puzzle-Games/assets/vendor-55f6e560.js">
-    <link rel="stylesheet" href="/Matching-Story---Puzzle-Games/assets/vendor-0ded8c46.css">
-    <link rel="stylesheet" href="/Matching-Story---Puzzle-Games/assets/styles-4ea30ad3.css">
+    <link rel="modulepreload" crossorigin href="/Matching-Story---Puzzle-Games/assets/vendor-2a57458d.js">
+    <link rel="stylesheet" href="/Matching-Story---Puzzle-Games/assets/vendor-7c8ef494.css">
+    <link rel="stylesheet" href="/Matching-Story---Puzzle-Games/assets/styles-46adb27d.css">
   </head>
   <body>
     <header class="header">
@@ -215,12 +209,30 @@
 </section>
 
       <section id="gallery" class="gallery">
+  <picture class="gallery-cloud">
+    <source
+      media="(max-width: 1199.98px)"
+      srcset="/Matching-Story---Puzzle-Games/assets/cloud-04-0784069d.png "
+      type="image/png"
+    />
+    <source
+      media="(min-width: 1200px)"
+      srcset="/Matching-Story---Puzzle-Games/assets/gallery-cloud-97df5050.png "
+      type="image/png"
+    />
+    <img src="/Matching-Story---Puzzle-Games/assets/cloud-04-0784069d.png" alt="cloud" />
+  </picture>
+  <img
+    class="gallery-cloud2"
+    src="/Matching-Story---Puzzle-Games/assets/gallery-cloud2-7f10c387.png"
+    alt="cloud"
+  />
   <h2 class="section-title">Gallery</h2>
   <swiper-container>
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <picture>
+          <picture class="gallery-image">
             <source
               media="(max-width: 1199.98px)"
               srcset="/Matching-Story---Puzzle-Games/assets/image_1_small-c7b92b0d.png "
@@ -231,129 +243,11 @@
               srcset="/Matching-Story---Puzzle-Games/assets/image_1-7c3f7fa7.png "
               type="image/png"
             />
-            <img
-              class="gallery-image"
-              src="/Matching-Story---Puzzle-Games/assets/image_1_small-c7b92b0d.png"
-              alt="img_1"
-            />
+            <img src="/Matching-Story---Puzzle-Games/assets/image_1_small-c7b92b0d.png" alt="img_1" />
           </picture>
         </div>
         <div class="swiper-slide">
-          <picture>
-            <source
-              media="(max-width: 1199.98px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/image_2_small-de6029eb.png "
-              type="image/png"
-            />
-            <source
-              media="(min-width: 1200px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/image_2-4f708271.png "
-              type="image/png"
-            />
-            <img
-              class="gallery-image"
-              src="/Matching-Story---Puzzle-Games/assets/image_2_small-de6029eb.png"
-              alt="img_1"
-            />
-          </picture>
-        </div>
-        <div class="swiper-slide">
-          <picture>
-            <source
-              media="(max-width: 1199.98px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/image_3_small-a2246f7d.png "
-              type="image/png"
-            />
-            <source
-              media="(min-width: 1200px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/image_3-a04013cc.png "
-              type="image/png"
-            />
-            <img
-              class="gallery-image"
-              src="/Matching-Story---Puzzle-Games/assets/image_3_small-a2246f7d.png"
-              alt="img_1"
-            />
-          </picture>
-        </div>
-        <div class="swiper-slide">
-          <picture>
-            <source
-              media="(max-width: 1199.98px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/image_4_small-4e88a26e.png "
-              type="image/png"
-            />
-            <source
-              media="(min-width: 1200px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/image_4-96e65fa1.png "
-              type="image/png"
-            />
-            <img
-              class="gallery-image"
-              src="/Matching-Story---Puzzle-Games/assets/image_4_small-4e88a26e.png"
-              alt="img_1"
-            />
-          </picture>
-        </div>
-        <div class="swiper-slide">
-          <picture>
-            <source
-              media="(max-width: 1199.98px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/image_5_small-5c228750.png "
-              type="image/png"
-            />
-            <source
-              media="(min-width: 1200px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/image_5-82bea406.png "
-              type="image/png"
-            />
-            <img
-              class="gallery-image"
-              src="/Matching-Story---Puzzle-Games/assets/image_5_small-5c228750.png"
-              alt="img_1"
-            />
-          </picture>
-        </div>
-        <div class="swiper-slide">
-          <picture>
-            <source
-              media="(max-width: 1199.98px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/image_6_small-013b47ef.png "
-              type="image/png"
-            />
-            <source
-              media="(min-width: 1200px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/image_6-d3d3e8df.png "
-              type="image/png"
-            />
-            <img
-              class="gallery-image"
-              src="/Matching-Story---Puzzle-Games/assets/image_6_small-013b47ef.png"
-              alt="img_1"
-            />
-          </picture>
-        </div>
-        <div class="swiper-slide">
-          <picture>
-            <source
-              media="(max-width: 1199.98px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/image_7_small-eb0e8f5b.png "
-              type="image/png"
-            />
-            <source
-              media="(min-width: 1200px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/image_7-033f6684.png "
-              type="image/png"
-            />
-            <img
-              class="gallery-image"
-              src="/Matching-Story---Puzzle-Games/assets/image_7_small-eb0e8f5b.png"
-              alt="img_1"
-            />
-          </picture>
-        </div>
-        <div class="swiper-slide">
-          <picture>
+          <picture class="gallery-image">
             <source
               media="(max-width: 1199.98px)"
               srcset="/Matching-Story---Puzzle-Games/assets/image_8_small-d7761053.png "
@@ -364,34 +258,86 @@
               srcset="/Matching-Story---Puzzle-Games/assets/image_8-482d4d57.png "
               type="image/png"
             />
-            <img
-              class="gallery-image"
-              src="/Matching-Story---Puzzle-Games/assets/image_8_small-d7761053.png"
-              alt="img_1"
-            />
+            <img src="/Matching-Story---Puzzle-Games/assets/image_8_small-d7761053.png" alt="img_2" />
           </picture>
         </div>
         <div class="swiper-slide">
-          <picture>
+          <picture class="gallery-image">
             <source
               media="(max-width: 1199.98px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/image_9_small-b88cf5a3.png "
+              srcset="/Matching-Story---Puzzle-Games/assets/image_3_small-a2246f7d.png "
               type="image/png"
             />
             <source
               media="(min-width: 1200px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/image_9-ed976195.png "
+              srcset="/Matching-Story---Puzzle-Games/assets/image_3-a04013cc.png "
               type="image/png"
             />
-            <img
-              class="gallery-image"
-              src="/Matching-Story---Puzzle-Games/assets/image_9_small-b88cf5a3.png"
-              alt="img_1"
-            />
+            <img src="/Matching-Story---Puzzle-Games/assets/image_3_small-a2246f7d.png" alt="img_3" />
           </picture>
         </div>
         <div class="swiper-slide">
-          <picture>
+          <picture class="gallery-image">
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_4_small-4e88a26e.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_4-96e65fa1.png "
+              type="image/png"
+            />
+            <img src="/Matching-Story---Puzzle-Games/assets/image_4_small-4e88a26e.png" alt="img_4" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="gallery-image">
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_5_small-5c228750.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_5-82bea406.png "
+              type="image/png"
+            />
+            <img src="/Matching-Story---Puzzle-Games/assets/image_5_small-5c228750.png" alt="img_5" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="gallery-image">
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_6_small-013b47ef.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_6-d3d3e8df.png "
+              type="image/png"
+            />
+            <img src="/Matching-Story---Puzzle-Games/assets/image_6_small-013b47ef.png" alt="img_6" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="gallery-image">
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_7_small-eb0e8f5b.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_7-033f6684.png "
+              type="image/png"
+            />
+            <img src="/Matching-Story---Puzzle-Games/assets/image_7_small-eb0e8f5b.png" alt="img_7" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="gallery-image">
             <source
               media="(max-width: 1199.98px)"
               srcset="/Matching-Story---Puzzle-Games/assets/image_10_small-e19f9475.png "
@@ -402,46 +348,74 @@
               srcset="/Matching-Story---Puzzle-Games/assets/image_10-c264eedf.png "
               type="image/png"
             />
-            <img
-              class="gallery-image"
-              src="/Matching-Story---Puzzle-Games/assets/image_10_small-e19f9475.png"
-              alt="img_1"
-            />
+            <img src="/Matching-Story---Puzzle-Games/assets/image_10_small-e19f9475.png" alt="img_8" />
           </picture>
         </div>
-      </div>
-      <div class="swiper-pagination" style="position: unset"></div>
-      <div class="swiper-button-next">
         <div class="swiper-slide">
-          <picture>
+          <picture class="gallery-image">
             <source
               media="(max-width: 1199.98px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/index_finger_right-fcddc874.png "
+              srcset="/Matching-Story---Puzzle-Games/assets/image_9_small-b88cf5a3.png "
               type="image/png"
             />
             <source
               media="(min-width: 1200px)"
-              srcset="/Matching-Story---Puzzle-Games/assets/index_finger_right-desk-dc2c716f.png "
+              srcset="/Matching-Story---Puzzle-Games/assets/image_9-ed976195.png "
               type="image/png"
             />
-            <img src="/Matching-Story---Puzzle-Games/assets/index_finger_right-fcddc874.png" alt="next" />
+            <img src="/Matching-Story---Puzzle-Games/assets/image_9_small-b88cf5a3.png" alt="img_9" />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="gallery-image">
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_2_small-de6029eb.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/image_2-4f708271.png "
+              type="image/png"
+            />
+            <img src="/Matching-Story---Puzzle-Games/assets/image_2_small-de6029eb.png" alt="img_10" />
           </picture>
         </div>
       </div>
-      <div class="swiper-button-prev">
-        <picture>
-          <source
-            media="(max-width: 1199.98px)"
-            srcset="/Matching-Story---Puzzle-Games/assets/index_finger_left-1cae3d6a.png "
-            type="image/png"
-          />
-          <source
-            media="(min-width: 1200px)"
-            srcset="/Matching-Story---Puzzle-Games/assets/index_finger_left-desk-aeec51c5.png "
-            type="image/png"
-          />
-          <img src="/Matching-Story---Puzzle-Games/assets/index_finger_left-1cae3d6a.png" alt="prew" />
-        </picture>
+      <div class="swiper-nav-container">
+        <div class="swiper-button-prev-slide">
+          <picture>
+            <source
+              media="(max-width: 1199.98px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/index_finger_left-1cae3d6a.png "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="/Matching-Story---Puzzle-Games/assets/index_finger_left-desk-aeec51c5.png "
+              type="image/png"
+            />
+            <img src="/Matching-Story---Puzzle-Games/assets/index_finger_left-1cae3d6a.png" alt="prew" />
+          </picture>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next-slide">
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(max-width: 1199.98px)"
+                srcset="/Matching-Story---Puzzle-Games/assets/index_finger_right-fcddc874.png "
+                type="image/png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="/Matching-Story---Puzzle-Games/assets/index_finger_right-desk-dc2c716f.png "
+                type="image/png"
+              />
+              <img src="/Matching-Story---Puzzle-Games/assets/index_finger_right-fcddc874.png" alt="next" />
+            </picture>
+          </div>
+        </div>
       </div>
     </div>
   </swiper-container>
@@ -672,7 +646,7 @@
       <h3 class="why-list-item-title">Unique Blend of Gameplay</h3>
       <p class="why-list-item-text">
         Combines matching puzzles with an engaging narrative for a fresh and
-        exciting experience.
+        <span class="why-list-nowrap"> exciting experience.</span>
       </p>
     </li>
     <li class="why-list-item">
@@ -691,8 +665,9 @@
       </picture>
       <h3 class="why-list-item-title">Character-Driven Storylines</h3>
       <p class="why-list-item-text">
-        Form connections with magical characters who grow and evolve with the
-        story.
+        Form connections with magical
+        <span class="why-list-nowrap">characters who</span> grow and evolve with
+        the story.
       </p>
     </li>
     <li class="why-list-item">
@@ -713,11 +688,10 @@
           alt="three"
         />
       </picture>
-
       <h3 class="why-list-item-title">Regular Updates</h3>
       <p class="why-list-item-text">
         Regular Updates: New chapters, puzzles, and surprises keep the game
-        dynamic and ever-evolving.
+        dynamic <span class="why-list-nowrap">and ever-evolving.</span>
       </p>
     </li>
     <li class="why-list-item">
@@ -985,7 +959,7 @@
         <div class="faq-answer-item-wrapper">
           <p class="faq-list-item-answer">
             Absolutely! Connect your account to save progress and sync it on
-            multiple devices
+            multiple devices.
           </p>
         </div>
       </div>
