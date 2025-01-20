@@ -106,7 +106,6 @@
   height: 50px;
   background-color: #78cffd;
   padding: 5px 0;
-  padding-left: 24px;
   box-shadow: 0px 4px 30px 0px #ffffff80;
   position: fixed;
   width: 100%;
@@ -122,7 +121,7 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
-  padding-right: 27px;
+  padding: 0;
 }
 .desktop-nav {
   display: none;
@@ -168,6 +167,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 0;
   }
   .logo-button {
     width: 80px;
