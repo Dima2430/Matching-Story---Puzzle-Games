@@ -6,6 +6,36 @@
 @import './reviews.scss';
 @import './benefits.scss';
 @import './about.scss';
+@import './why-us.scss';
+@import './faq.scss';
+@import './privacy-policy.scss';
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/fonts/latomedium.woff2') format('woff2'),
+    url('../assets/fonts/latomedium.woff') format('woff'),
+    url('../assets/fonts/latomedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/fonts/latosemibold.woff2') format('woff2'),
+    url('../assets/fonts/latosemibold.woff') format('woff'),
+    url('../assets/fonts/latosemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/fonts/latoheavy.woff2') format('woff2'),
+    url('../assets/fonts/latoheavy.woff') format('woff'),
+    url('../assets/fonts/latoheavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
 
 :root {
   font-family: 'Lato', 'Roboto Slab', sans-serif;
@@ -13,7 +43,7 @@
   line-height: 24px;
   font-weight: 400;
   color: rgba(0, 0, 0, 1);
-  background: rgba(255, 255, 255, 0.87);
+  // background: rgba(255, 255, 255, 0.87);
   background: linear-gradient(180deg, #0e88cb 0%, #5ac7ef 40.05%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,9 +56,26 @@
   -webkit-text-size-adjust: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: $_main_bg_color;
   overflow: visible;
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 320px;
+  padding-bottom: 40px;
+  scroll-margin-top: 50px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 100px;
+    max-width: 1200px;
+    scroll-margin-top: 100px;
+  }
 }
 
 .container {
@@ -39,16 +86,24 @@ body {
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
 .section-title {
+  font-family: 'Roboto Slab', sans-serif;
   text-align: center;
   margin-bottom: 24px;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.32;
   color: rgba(7, 17, 64, 1);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
 }
 main {
   flex-grow: 1;
