@@ -145,5 +145,14 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.why-list-nowrap {
+  white-space: nowrap;
+
+  @media screen and (min-width: 1200px) {
+    white-space: normal;
   }
 }

@@ -114,7 +114,7 @@
   flex-direction: column;
   gap: 16px;
   list-style-type: disc;
-  padding-left: 47px;
+  padding-left: 44px;
 
   @media screen and (min-width: 1200px) {
     padding-left: 120px;
@@ -123,7 +123,7 @@
 }
 
 .privacy-nested-list li:first-child {
-  margin-left: -47px;
+  margin-left: -44px;
   list-style-type: none;
 
   @media screen and (min-width: 1200px) {
@@ -133,12 +133,13 @@
 
 .privacy-nested-list-item-link {
   display: block;
-  max-width: 111px;
+  max-width: 102px;
 
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
+  color: #000000;
 
   @media screen and (min-width: 1200px) {
     max-width: 460px;
@@ -170,6 +171,10 @@
 
 .small-width {
   @media screen and (min-width: 1200px) {
-    max-width: 920px;
+    max-width: 1000px;
   }
+}
+
+.nowrap {
+  white-space: nowrap;
 }
