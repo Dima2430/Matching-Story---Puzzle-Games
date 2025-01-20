@@ -12,6 +12,15 @@
 
 @font-face {
   font-family: 'Lato';
+  src: url('../assets/fonts/latomedium.woff2') format('woff2'),
+    url('../assets/fonts/latomedium.woff') format('woff'),
+    url('../assets/fonts/latomedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
   src: url('../assets/fonts/latosemibold.woff2') format('woff2'),
     url('../assets/fonts/latosemibold.woff') format('woff'),
     url('../assets/fonts/latosemibold.ttf') format('truetype');
