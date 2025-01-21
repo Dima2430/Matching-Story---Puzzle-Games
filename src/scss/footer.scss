@@ -31,12 +31,19 @@
 .footer-link {
   text-decoration: none;
   white-space: nowrap;
+  position: relative;
 }
-
-.footer-link:hover {
-  text-decoration: underline;
+.active-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  height: 2px;
+  background-color: #000000;
+  border-radius: 2px;
+  width: 100%;
+  transition: width 0.3s ease;
 }
-
 .divider {
   font-size: 24px;
   font-weight: 500;

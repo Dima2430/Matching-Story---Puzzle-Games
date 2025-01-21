@@ -19,10 +19,6 @@
   white-space: nowrap;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #002bff;
-}
 .backdrop {
   position: fixed;
   top: 0;
@@ -125,6 +121,25 @@
 }
 .desktop-nav {
   display: none;
+}
+.nav-link:hover {
+  color: #002bff;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0 3px;
+}
+.active-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  height: 2px;
+  background-color: #000000;
+  border-radius: 2px;
+  width: 100%;
+  transition: width 0.3s ease;
 }
 @media screen and (min-width: 1200px) {
   .desktop-nav {
