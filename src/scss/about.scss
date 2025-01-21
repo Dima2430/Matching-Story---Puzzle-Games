@@ -11,10 +11,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   max-width: 320px;
   justify-self: center;
   scroll-margin-top: 100px;
+  position: relative;
+}
+.about-cloud {
+  position: absolute;
+  width: 197px;
+
+  left: -24px;
+  bottom: -300px;
+  z-index: 0;
 }
 .about-text {
   position: relative;
@@ -47,9 +55,16 @@
   width: 64px;
   height: 115px;
 }
+.desktop-about-cloud {
+  display: none;
+}
 @media screen and (min-width: 1200px) {
   .about {
-    padding-top: 0;
+    padding-top: 100px;
+    max-width: 1200px;
+  }
+  .about-cloud {
+    display: none;
   }
   .about-girl {
     width: 151.55px;
@@ -69,5 +84,12 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 42.2px;
+  }
+  .desktop-about-cloud {
+    display: block;
+    position: absolute;
+    width: 597px;
+    top: -545px;
+    left: -62px;
   }
 }
