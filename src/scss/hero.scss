@@ -5,7 +5,7 @@
   justify-content: center;
   scroll-margin-top: 100px;
 }
-.hero div {
+.hero-container div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,19 +70,37 @@
 .desktop-phones {
   display: none;
 }
+.desktop-phones-container {
+  width: 550px;
+}
 @media screen and (min-width: 1200px) {
+  .hero-container div {
+    align-items: flex-start;
+  }
+  .desktop-phones {
+    display: block;
+    width: 600px;
+    height: 543px;
+    object-fit: cover;
+    object-position: left center;
+  }
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
   .hero {
-    padding-left: 612px;
-    padding-bottom: 121px;
-    padding-top: 148px;
-    height: 646px;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
-    background-image: url('../img/desktop-phones.png');
-    background-position: 10% 58%;
-    background-size: 600px 543px;
-    background-repeat: no-repeat;
+    justify-content: space-between;
+    // background-image: url('../img/desktop-phones.png');
+    // background-position: 10% 58%;
+    // background-size: 600px 543px;
+    // background-repeat: no-repeat;
   }
 
   .hero-title {
@@ -102,10 +120,10 @@
     line-height: 28.8px;
     margin-bottom: 100px;
   }
-  .hero div {
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
+  // .hero div {
+  //   align-items: flex-start;
+  //   justify-content: flex-start;
+  // }
   .hero-phones {
     display: none;
   }
