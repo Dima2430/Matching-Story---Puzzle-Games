@@ -1,5 +1,7 @@
 .fairy-position {
   position: relative;
+  overflow: visible; /* Позволяет видеть другие стороны */
+  clip-path: inset(-100px -1000px 0px -1000px); /* Верх, справа, низ, слева */
 }
 
 .faq-fairy {
@@ -12,8 +14,8 @@
   @media screen and (min-width: 1200px) {
     width: 161px;
     height: 265px;
-    right: 46px;
-    top: -66px;
+    right: 49px;
+    top: -74px;
   }
 }
 
@@ -22,7 +24,7 @@
   display: none;
   position: absolute;
   left: -1352px;
-  bottom: -652px;
+  bottom: 0;
 
   @media screen and (min-width: 1200px) {
     display: block;
@@ -34,7 +36,7 @@
   display: none;
   position: absolute;
   right: -1270px;
-  bottom: -586px;
+  bottom: 0;
 
   @media screen and (min-width: 1200px) {
     display: block;
