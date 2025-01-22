@@ -126,7 +126,9 @@
 .nav-link:hover {
   color: #002bff;
 }
-
+.nav-link:active {
+  color: #000000;
+}
 .nav-link {
   position: relative;
   padding: 0 3px;
