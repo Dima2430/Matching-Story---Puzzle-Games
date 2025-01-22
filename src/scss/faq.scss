@@ -18,11 +18,11 @@
 }
 
 .faq-first-cloud {
+  max-width: unset;
   display: none;
-  width: 500px;
   position: absolute;
-  left: 0;
-  bottom: -100px;
+  left: -1352px;
+  bottom: -652px;
 
   @media screen and (min-width: 1200px) {
     display: block;
@@ -30,11 +30,11 @@
 }
 
 .faq-second-cloud {
+  max-width: unset;
   display: none;
-  width: 600px;
   position: absolute;
-  right: 0;
-  bottom: -100px;
+  right: -1270px;
+  bottom: -586px;
 
   @media screen and (min-width: 1200px) {
     display: block;

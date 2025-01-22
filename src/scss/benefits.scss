@@ -2,7 +2,27 @@
   padding-top: 40px;
   padding-bottom: 40px;
   scroll-margin-top: 50px;
+  max-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
+
+.benefits-cloud {
+  position: absolute;
+  top: 170px;
+  left: -72px;
+  z-index: -1;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
 .benefits-title {
   font-weight: 700;
   font-size: 20px;
@@ -30,8 +50,11 @@
   height: 38px;
 }
 .benefits-list {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 24px;
 }

@@ -6,7 +6,7 @@ import 'swiper/css';
 const swiper = new Swiper('.swiper', {
   modules: [Navigation, Pagination],
   slidesPerView: 1,
-  spaceBetween: -24,
+  spaceBetween: -23,
   centeredSlides: true,
 
   breakpoints: {

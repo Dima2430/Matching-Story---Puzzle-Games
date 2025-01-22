@@ -17,11 +17,12 @@
 
 .gallery-cloud {
   position: absolute;
-  right: 0;
+  right: -463px;
   bottom: 106px;
   z-index: -1;
 
   @media screen and (min-width: 1200px) {
+    right: -1082px;
     bottom: 195px;
   }
 }
@@ -29,7 +30,7 @@
 .gallery-cloud2 {
   display: none;
   position: absolute;
-  left: 0;
+  left: -120px;
   bottom: 0;
   z-index: -1;
 
