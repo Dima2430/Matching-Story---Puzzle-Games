@@ -108,6 +108,7 @@ body {
 main {
   flex-grow: 1;
   padding-top: 50px;
+  overflow: hidden;
 }
 @media screen and (min-width: 1200px) {
   main {

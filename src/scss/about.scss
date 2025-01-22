@@ -18,9 +18,8 @@
 }
 .about-cloud {
   position: absolute;
-  width: 197px;
-
-  left: -24px;
+  max-width: unset;
+  left: -796px;
   bottom: -300px;
   z-index: 0;
 }
@@ -87,9 +86,9 @@
   }
   .desktop-about-cloud {
     display: block;
+    max-width: unset;
     position: absolute;
-    width: 597px;
-    top: -545px;
-    left: -62px;
+    top: -540px;
+    left: -1335px;
   }
 }

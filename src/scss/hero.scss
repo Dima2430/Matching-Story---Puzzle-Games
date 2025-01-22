@@ -12,9 +12,7 @@
 .hero-cloud {
   position: absolute;
   top: 130px;
-  right: 0;
-  width: 157px;
-  height: 129px;
+  right: -70px;
   z-index: -1;
 }
 .hero-container {
@@ -180,10 +178,8 @@
   .desktop-hero-cloud {
     display: block;
     position: absolute;
-    width: 200px;
-    height: auto;
-    right: 0;
-    top: 80px;
+    right: -245px;
+    top: 67px;
     z-index: -1;
   }
 }

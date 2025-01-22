@@ -23,10 +23,8 @@
 }
 
 .first-cloud {
-  width: 180px;
-  height: 141px;
   position: absolute;
-  left: 140px;
+  left: 150px;
   top: -50px;
 
   @media screen and (min-width: 1200px) {
@@ -35,19 +33,19 @@
 }
 
 .second-cloud {
-  width: 180px;
+  max-width: unset;
   position: absolute;
-  left: 0px;
-  bottom: 30px;
+  left: -271px;
+  bottom: -61px;
+
   @media screen and (min-width: 1200px) {
     display: none;
   }
 }
 
 .third-cloud {
-  width: 350px;
   position: absolute;
-  right: 0;
+  right: -110px;
   top: 75px;
   display: none;
 
